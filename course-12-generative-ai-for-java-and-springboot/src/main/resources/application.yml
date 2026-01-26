@@ -1,0 +1,11 @@
+server:
+  port: 8080
+gemini:
+  api-key: ''
+spring:
+  thymeleaf:
+    cache: false
+logging:
+  level:
+    com:
+      retailstore: DEBUG
