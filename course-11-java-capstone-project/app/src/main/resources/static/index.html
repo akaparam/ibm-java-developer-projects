@@ -1,0 +1,68 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Page Title -->
+    <title>Select Role</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/logo/Logo.png" type="image/png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Utility & Rendering Scripts -->
+    <script src="../js/util.js" defer></script>
+    <script src="../js/render.js" defer></script>
+
+    <!-- Component Scripts -->
+    <script src="../js/components/header.js" defer></script>
+    <script src="../js/components/footer.js" defer></script>
+</head>
+
+<body>
+<!-- Main Container -->
+<div class="container">
+    <div class="wrapper">
+
+        <!-- Header Placeholder -->
+        <div id="header"></div>
+
+        <!-- Main Content -->
+        <main>
+            <h1>Select Your Role</h1>
+
+            <div class="role-buttons">
+                <button id="adminBtn">Admin</button>
+                <button id="patientBtn">Patient</button>
+                <button id="doctorBtn">Doctor</button>
+            </div>
+        </main>
+
+        <!-- Footer Placeholder -->
+        <div id="footer"></div>
+
+    </div>
+</div>
+
+<!-- Modal Overlay -->
+<div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal">
+        <button class="modal-close" id="modalCloseBtn">&times;</button>
+        <div id="modalContent">
+            <!-- Dynamic login content injected here -->
+        </div>
+    </div>
+</div>
+
+<!-- Page-Specific Logic -->
+<script type="module" src="../js/pages/index.js" defer></script>
+</body>
+
+</html>
